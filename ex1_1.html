@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // window.onload : 스크립트에서 바디에실행하라는 명령어를 적용할 수 있음
+        window.onload = function doclick(){
+            var htmltags="";
+            htmltags = "hahaha";
+            htmltags += "<ul>";
+                htmltags += "<li>alpha</li>"
+            htmltags += "</ul>";
+            document.body.innerHTML = htmltags;
+        }
+    </script>
+</head>
+<body>
+    <div>
+        TEST
+    </div>
+    <button onclick="doclick()">버튼</button>
+</body>
+</html>
