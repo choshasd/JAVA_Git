@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // function doA(i){
+            
+        //     setTimeout(function(){alert(i+"번 실행되었습니다");},1000);
+        //     // setTimeout(()=>{alert(i +"번 실행되었습니다");},1000);
+        // }
+        (function(i){alert(i)})(0);
+        //setTimeout(()=>{},1000);
+        for(var i = 0;i<10;i++){
+            // doA(i);
+            // setTimeout(function(){alert("실행" + i},1000);
+            (function(){})();
+            ((i)=>{
+                setTimeout((i)=>{
+                    alert(i);
+                },1000);
+            })(i);
+        }
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

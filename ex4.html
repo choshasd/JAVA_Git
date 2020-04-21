@@ -5,12 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script>
+        var b = { a : 10, b : 20 };
+        var a = 10;
+        ++a;
+        a++;
         alert(typeof '문자열');
         alert(typeof 273);
         alert(typeof true);
         alert(typeof function(){});
         alert(typeof {});
         alert(typeof AAA);
+        alert(typeof a);
+        alert("b.a = " +b.a); // b에 저장되어있는 a출력
         
     </script>
 </head>
